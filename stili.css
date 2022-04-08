@@ -1,9 +1,56 @@
 .labais {
     float: center;
-    background-color: blueviolet;
+    background-color: #61A4BC;
     margin: 5%;
     padding: 5%;
 }
+#kalk{
+  margin: auto;
+  width: auto;
+}
+
 .neradit{
    display: none;
+  }
+  button{
+    background-color: #F7E2E2;
+    border: none;
+    color: #5B7DB1;;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    width: 100%;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    border: 2px solid #5B7DB1;
+    font-family: 'Rajdhani', sans-serif
+  }
+  button:hover {
+    background-color: #96a4bb;
+    color: white;
+  }
+  button:active{
+    background-color: #1A132F;
+  }
+  input{
+    background-color: #F7E2E2;
+    color: #5B7DB1;
+    padding: 0.1% 0.1%;
+    font-size: 30px;
+    width: 100%;
+  }
+  #cipari{
+    width: 20%;
+    margin: auto;
+  }
+  /* #skaitlis {
+    width: 10%;
+  }
+  #zime{
+    width: 10%;
+  }
+  #rez2{
+    width: 20%;
   }
