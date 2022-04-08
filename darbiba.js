@@ -4,11 +4,17 @@ function reizinat(){
     document.querySelector('#skaitlis1').value=skaitlis1;
     document.querySelector('#zime').value='*';
    }
+function notirit(){
+    document.querySelector('#skaitlis').value="";
+    document.querySelector('#skaitlis1').value="";
+    document.querySelector('#zime').value="";
+    document.querySelector('#rez2').value="";
+}
 function vienads(){
     let zime=document.querySelector('#zime').value;
-    let skaitlis2=parseInt(document.querySelector('#skaitlis').value);
+    let skaitlis2=parseFloat(document.querySelector('#skaitlis').value);
     document.querySelector('#skaitlis').value="";
-    let skaitlis1=parseInt(document.querySelector('#skaitlis1').value);
+    let skaitlis1=parseFloat(document.querySelector('#skaitlis1').value);
         if (zime=='*'){
     let rezultats=skaitlis1*skaitlis2;
     document.querySelector('#rez2').value=rezultats;
@@ -49,11 +55,22 @@ function kvsakne(){
     let rezultats=Math.sqrt(skaitlis1);
     document.querySelector('#rez2').value=rezultats;
    }
-function sin(){
+function sind(){
     let skaitlis1=document.querySelector('#skaitlis').value;
     document.querySelector('#skaitlis').value="";
     document.querySelector('#skaitlis1').value=skaitlis1;
-    document.querySelector('#zime').value='sin';
+    document.querySelector('#zime').value='sind';
+    skaitlis1=skaitlis1*(Math.PI/180);
+    let rezultats=Math.sin(skaitlis1);
+    document.querySelector('#rez2').value=rezultats;
+   }
+   function sinrad(){
+    let skaitlis1=document.querySelector('#skaitlis').value;
+    document.querySelector('#skaitlis').value="";
+    document.querySelector('#skaitlis1').value=skaitlis1;
+    document.querySelector('#zime').value='sinrad';
+    let rezultats=Math.sin(skaitlis1);
+    document.querySelector('#rez2').value=rezultats;
    }
 function saskaitit(){
     let skaitlis1=document.querySelector('#skaitlis').value;
@@ -73,3 +90,4 @@ function dalit(){
     document.querySelector('#skaitlis1').value=skaitlis1;
     document.querySelector('#zime').value='/';
    }
+
