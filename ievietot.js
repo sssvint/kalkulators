@@ -48,3 +48,8 @@ function ievietot9(){
     virkne=virkne+'0';
     document.querySelector('#skaitlis').value=virkne;
     }
+function ievietotkom(){
+    let virkne=document.querySelector('#skaitlis').value
+    virkne=virkne+'.';
+    document.querySelector('#skaitlis').value=virkne;
+}
